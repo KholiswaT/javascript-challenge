@@ -48,22 +48,7 @@ function runEnter() {
     var inputShapeValue = inputShape.property("value");
 
 
-    //Filter data based on the dates from the data.js file
-
-    // var filterData = tableData.filter(date => date.datetime === inputDateValue 
-    //                                   & date.city === inputCityValue 
-    //                                   & date.state === inputState
-    //                                   & date.country === inputCountry
-    //                                   & date.shape === inputShape 
-    //                                   );
-
-    // filteredData.forEach((dataReport) => {
-    //   var row = tbody.append("tr");
-    //   Object.entries(dataReport).forEach(([key,value]) => {
-    //     var cell = row.append("td");
-    //     cell.text(value);
-    //     });
-    //  }); 
+    //Filter data based on the the following criteria from the data.js file
 
     var filteredDate = tableData.filter(date => date.datetime === inputDateValue);
     var filteredCity = tableData.filter(place => place.city === inputCityValue);
